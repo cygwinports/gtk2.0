@@ -1,0 +1,6 @@
+category: Libs X11 Gnome
+requires: cygwin atk glib2 gnome-icon-theme libX11_6 libXcursor1 libXext6 libXi6 libXrandr2 libcairo2 libjpeg62 libpng12 libtiff5 pango shared-mime-info
+sdesc: "Multi-platform GUI toolkit (runtime)"
+ldesc: "Offering a complete set of widgets, GTK+ is suitable for 
+projects ranging from small one-off projects to complete application 
+suites."
