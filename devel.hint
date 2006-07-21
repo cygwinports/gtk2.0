@@ -1,5 +1,5 @@
 category: Libs X11 Gnome
-requires: cygwin gtk2-x11 atk-devel glib2-devel libX11 libXcursor libXext libXi libXrandr cairo pango-devel
+requires: cygwin gdk-pixbuf2 atk-devel glib2-devel libX11 libXcursor libXext libXi libXrandr cairo pango-devel
 external-source: gtk2-x11
 sdesc: "Multi-platform GUI toolkit (development)"
 ldesc: "Offering a complete set of widgets, GTK+ is suitable for 

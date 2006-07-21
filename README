@@ -8,16 +8,16 @@ Runtime requirements:
   cygwin-1.5.20-1
   atk-1.10.3-1
   glib2-2.10.3-1
-  libX11_6-1.0.0-2
-  libXcursor1-1.1.5.2-1
-  libXext6-1.0.0-1
-  libXi6-1.0.0-1
-  libXrandr2-1.1.0.2-1
+  libX11_6-1.0.2-1
+  libXcursor1-1.1.6-1
+  libXext6-1.0.1-1
+  libXi6-1.0.1-1
+  libXrandr2-1.1.1-1
   libcairo2-1.0.4-1
   libjpeg62-6b-11
   libpng12-1.2.8-2
   libtiff5-3.7.3-1
-  pango-1.10.4-1
+  pango-1.12.3-1
 
 Build requirements:
 (besides corresponding devel packages)
@@ -43,17 +43,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtk2-x11-2.8.17-X-src.tar.bz2
+  unpack gtk2-x11-2.8.20-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtk2-x11-2.8.17-X.cygport all
+  cygport ./gtk2-x11-2.8.20-X.cygport all
 
 This will create:
-  /usr/src/gtk2-x11-2.8.17-X-src.tar.bz2
-  /usr/src/gtk2-x11-2.8.17-X.tar.bz2
-  /usr/src/gtk2-x11-devel-2.8.17-X.tar.bz2
-  /usr/src/gtk2-x11-doc-2.8.17-X.tar.bz2
+  /usr/src/gtk2-x11-2.8.20-X-src.tar.bz2
+  /usr/src/gtk2-x11-2.8.20-X.tar.bz2
+  /usr/src/gtk2-x11-devel-2.8.20-X.tar.bz2
+  /usr/src/gtk2-x11-doc-2.8.20-X.tar.bz2
+  /usr/src/gdk-pixbuf2-2.8.20-X.tar.bz2
 
 -------------------------------------------
 
@@ -62,10 +63,8 @@ Files included in the main package:
   /etc/postinstall/gtk2-x11.sh
   /etc/preremove/gtk2-x11.sh
   /usr/bin/cyggdk-x11-2.0-0.dll
-  /usr/bin/cyggdk_pixbuf-2.0-0.dll
-  /usr/bin/cyggdk_pixbuf_xlib-2.0-0.dll
   /usr/bin/cyggtk-x11-2.0-0.dll
-  /usr/bin/gdk-pixbuf-query-loaders.exe
+  /usr/bin/gtk-demo.exe
   /usr/bin/gtk-query-immodules-2.0.exe
   /usr/bin/gtk-update-icon-cache.exe
   /usr/lib/gtk-2.0/2.4.0/engines/cygpixmap.dll
@@ -90,42 +89,54 @@ Files included in the main package:
   /usr/lib/gtk-2.0/2.4.0/immodules/im-viqr.la
   /usr/lib/gtk-2.0/2.4.0/immodules/im-xim.dll
   /usr/lib/gtk-2.0/2.4.0/immodules/im-xim.la
-  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-ani.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-bmp.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-gif.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-ico.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-jpeg.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-pcx.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-png.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-pnm.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-ras.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-tga.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-tiff.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-wbmp.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-xbm.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-xpm.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-ani.la
-  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-bmp.la
-  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-gif.la
-  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-ico.la
-  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-jpeg.la
-  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-pcx.la
-  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-png.la
-  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-pnm.la
-  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-ras.la
-  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-tga.la
-  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-tiff.la
-  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-wbmp.la
-  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-xbm.la
-  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-xpm.la
-  /usr/share/doc/Cygwin/gtk2-x11-2.8.17.README
-  /usr/share/doc/gtk2-x11-2.8.17/AUTHORS
-  /usr/share/doc/gtk2-x11-2.8.17/ChangeLog
-  /usr/share/doc/gtk2-x11-2.8.17/COPYING
-  /usr/share/doc/gtk2-x11-2.8.17/HACKING
-  /usr/share/doc/gtk2-x11-2.8.17/INSTALL
-  /usr/share/doc/gtk2-x11-2.8.17/NEWS
-  /usr/share/doc/gtk2-x11-2.8.17/README
+  /usr/share/doc/Cygwin/gtk2-x11-2.8.20.README
+  /usr/share/doc/gtk2-x11-2.8.20/AUTHORS
+  /usr/share/doc/gtk2-x11-2.8.20/ChangeLog
+  /usr/share/doc/gtk2-x11-2.8.20/COPYING
+  /usr/share/doc/gtk2-x11-2.8.20/HACKING
+  /usr/share/doc/gtk2-x11-2.8.20/INSTALL
+  /usr/share/doc/gtk2-x11-2.8.20/NEWS
+  /usr/share/doc/gtk2-x11-2.8.20/README
+  /usr/share/gtk-2.0/demo/alphatest.png
+  /usr/share/gtk-2.0/demo/apple-red.png
+  /usr/share/gtk-2.0/demo/appwindow.c
+  /usr/share/gtk-2.0/demo/background.jpg
+  /usr/share/gtk-2.0/demo/button_box.c
+  /usr/share/gtk-2.0/demo/changedisplay.c
+  /usr/share/gtk-2.0/demo/clipboard.c
+  /usr/share/gtk-2.0/demo/colorsel.c
+  /usr/share/gtk-2.0/demo/combobox.c
+  /usr/share/gtk-2.0/demo/dialog.c
+  /usr/share/gtk-2.0/demo/drawingarea.c
+  /usr/share/gtk-2.0/demo/editable_cells.c
+  /usr/share/gtk-2.0/demo/entry_completion.c
+  /usr/share/gtk-2.0/demo/expander.c
+  /usr/share/gtk-2.0/demo/floppybuddy.gif
+  /usr/share/gtk-2.0/demo/gnome-applets.png
+  /usr/share/gtk-2.0/demo/gnome-calendar.png
+  /usr/share/gtk-2.0/demo/gnome-foot.png
+  /usr/share/gtk-2.0/demo/gnome-fs-directory.png
+  /usr/share/gtk-2.0/demo/gnome-fs-regular.png
+  /usr/share/gtk-2.0/demo/gnome-gimp.png
+  /usr/share/gtk-2.0/demo/gnome-gmush.png
+  /usr/share/gtk-2.0/demo/gnome-gsame.png
+  /usr/share/gtk-2.0/demo/gnu-keys.png
+  /usr/share/gtk-2.0/demo/gtk-logo-rgb.gif
+  /usr/share/gtk-2.0/demo/hypertext.c
+  /usr/share/gtk-2.0/demo/iconview.c
+  /usr/share/gtk-2.0/demo/iconview_edit.c
+  /usr/share/gtk-2.0/demo/images.c
+  /usr/share/gtk-2.0/demo/list_store.c
+  /usr/share/gtk-2.0/demo/menus.c
+  /usr/share/gtk-2.0/demo/panes.c
+  /usr/share/gtk-2.0/demo/pickers.c
+  /usr/share/gtk-2.0/demo/pixbufs.c
+  /usr/share/gtk-2.0/demo/rotated_text.c
+  /usr/share/gtk-2.0/demo/sizegroup.c
+  /usr/share/gtk-2.0/demo/stock_browser.c
+  /usr/share/gtk-2.0/demo/textview.c
+  /usr/share/gtk-2.0/demo/tree_store.c
+  /usr/share/gtk-2.0/demo/ui_manager.c
   /usr/share/locale/af/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/af/LC_MESSAGES/gtk20.mo
   /usr/share/locale/am/LC_MESSAGES/gtk20-properties.mo
@@ -292,17 +303,53 @@ Files included in the main package:
   /usr/share/locale/zh_HK/LC_MESSAGES/gtk20.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/gtk20.mo
-  /usr/share/man/man1/gdk-pixbuf-query-loaders.1.gz
   /usr/share/man/man1/gtk-query-immodules-2.0.1.gz
   /usr/share/man/man1/gtk-update-icon-cache.1.gz
   /usr/share/themes/Default/gtk-2.0-key/gtkrc
   /usr/share/themes/Emacs/gtk-2.0-key/gtkrc
   /usr/share/themes/Raleigh/gtk-2.0/gtkrc
 
+Files included in the gdk-pixbuf package:
+
+  /etc/postinstall/gdk-pixbuf2.sh
+  /etc/preremove/gdk-pixbuf2.sh
+  /usr/bin/cyggdk_pixbuf-2.0-0.dll
+  /usr/bin/cyggdk_pixbuf_xlib-2.0-0.dll
+  /usr/bin/gdk-pixbuf-csource.exe
+  /usr/bin/gdk-pixbuf-query-loaders.exe
+  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-ani.dll
+  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-bmp.dll
+  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-gif.dll
+  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-ico.dll
+  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-jpeg.dll
+  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-pcx.dll
+  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-png.dll
+  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-pnm.dll
+  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-ras.dll
+  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-tga.dll
+  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-tiff.dll
+  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-wbmp.dll
+  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-xbm.dll
+  /usr/lib/gtk-2.0/2.4.0/loaders/cygpixbufloader-xpm.dll
+  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-ani.la
+  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-bmp.la
+  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-gif.la
+  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-ico.la
+  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-jpeg.la
+  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-pcx.la
+  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-png.la
+  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-pnm.la
+  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-ras.la
+  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-tga.la
+  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-tiff.la
+  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-wbmp.la
+  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-xbm.la
+  /usr/lib/gtk-2.0/2.4.0/loaders/libpixbufloader-xpm.la
+  /usr/share/man/man1/gdk-pixbuf-csource.1.gz
+  /usr/share/man/man1/gdk-pixbuf-query-loaders.1.gz
+
 Files included in the devel package:
 
-  /usr/bin/gdk-pixbuf-csource.exe
-  /usr/bin/gtk-demo.exe
   /usr/include/gtk-2.0/gdk/gdk.h
   /usr/include/gtk-2.0/gdk/gdkalias.h
   /usr/include/gtk-2.0/gdk/gdkcairo.h
@@ -541,47 +588,6 @@ Files included in the devel package:
   /usr/lib/pkgconfig/gtk+-2.0.pc
   /usr/lib/pkgconfig/gtk+-x11-2.0.pc
   /usr/share/aclocal/gtk-2.0.m4
-  /usr/share/gtk-2.0/demo/alphatest.png
-  /usr/share/gtk-2.0/demo/apple-red.png
-  /usr/share/gtk-2.0/demo/appwindow.c
-  /usr/share/gtk-2.0/demo/background.jpg
-  /usr/share/gtk-2.0/demo/button_box.c
-  /usr/share/gtk-2.0/demo/changedisplay.c
-  /usr/share/gtk-2.0/demo/clipboard.c
-  /usr/share/gtk-2.0/demo/colorsel.c
-  /usr/share/gtk-2.0/demo/combobox.c
-  /usr/share/gtk-2.0/demo/dialog.c
-  /usr/share/gtk-2.0/demo/drawingarea.c
-  /usr/share/gtk-2.0/demo/editable_cells.c
-  /usr/share/gtk-2.0/demo/entry_completion.c
-  /usr/share/gtk-2.0/demo/expander.c
-  /usr/share/gtk-2.0/demo/floppybuddy.gif
-  /usr/share/gtk-2.0/demo/gnome-applets.png
-  /usr/share/gtk-2.0/demo/gnome-calendar.png
-  /usr/share/gtk-2.0/demo/gnome-foot.png
-  /usr/share/gtk-2.0/demo/gnome-fs-directory.png
-  /usr/share/gtk-2.0/demo/gnome-fs-regular.png
-  /usr/share/gtk-2.0/demo/gnome-gimp.png
-  /usr/share/gtk-2.0/demo/gnome-gmush.png
-  /usr/share/gtk-2.0/demo/gnome-gsame.png
-  /usr/share/gtk-2.0/demo/gnu-keys.png
-  /usr/share/gtk-2.0/demo/gtk-logo-rgb.gif
-  /usr/share/gtk-2.0/demo/hypertext.c
-  /usr/share/gtk-2.0/demo/iconview.c
-  /usr/share/gtk-2.0/demo/iconview_edit.c
-  /usr/share/gtk-2.0/demo/images.c
-  /usr/share/gtk-2.0/demo/list_store.c
-  /usr/share/gtk-2.0/demo/menus.c
-  /usr/share/gtk-2.0/demo/panes.c
-  /usr/share/gtk-2.0/demo/pickers.c
-  /usr/share/gtk-2.0/demo/pixbufs.c
-  /usr/share/gtk-2.0/demo/rotated_text.c
-  /usr/share/gtk-2.0/demo/sizegroup.c
-  /usr/share/gtk-2.0/demo/stock_browser.c
-  /usr/share/gtk-2.0/demo/textview.c
-  /usr/share/gtk-2.0/demo/tree_store.c
-  /usr/share/gtk-2.0/demo/ui_manager.c
-  /usr/share/man/man1/gdk-pixbuf-csource.1.gz
 
 Files included in the doc package:
 
@@ -1124,6 +1130,10 @@ Files included in the doc package:
 --------------------
 
 Port Notes:
+
+----- version 2.8.20-1 -----
+Version bump.
+Created separate gdk-pixbuf2 runtime for use without all of GTK+.
 
 ----- version 2.8.19-1 -----
 Version bump.
