@@ -5,33 +5,37 @@ Offering a complete set of widgets, GTK+ is suitable for projects
 ranging from small one-off projects to complete application suites.
 
 Runtime requirements:
-  cygwin-1.5.20-1
-  atk-1.10.3-1
-  glib2-2.10.3-1
-  libX11_6-1.0.2-1
-  libXcursor1-1.1.6-1
-  libXext6-1.0.1-1
-  libXi6-1.0.1-1
-  libXrandr2-1.1.1-1
-  libcairo2-1.0.4-1
-  libjpeg62-6b-11
-  libpng12-1.2.8-2
-  libtiff5-3.7.3-1
-  pango-1.12.3-1
+  cygwin-1.5.23-2
+  atk-1.12.4-1
+  glib2-2.12.7-1
+  libX11_6-1.1.1-1
+  libXcursor1-1.1.8-1
+  libXext6-1.0.2-1
+  libXfixes3-4.0.3-1
+  libXi6-1.1.0-1
+  libXrandr2-1.1.2-1
+  libXrender1-0.9.2-1
+  libcairo2-1.2.6-1
+  libfontconfig1-2.3.2-2
+  libintl8-0.15-1
+  libjpeg62-6b-12
+  libpng12-1.2.12-1
+  libtiff5-3.8.2-3
+  pango-1.14.9-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.20-1
-  automake2.5-2.59-2
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  gtk-doc-1.5-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
-  pkg-config-0.20-1
-  sed-4.1.5-1
+  cygwin-1.5.23-2
+  automake2.5-2.60-2
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gtk-doc-1.7-1
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical homepage:
   http://www.gtk.org/
@@ -43,18 +47,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtk2-x11-2.8.20-X-src.tar.bz2
+  unpack gtk2-x11-2.10.7-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtk2-x11-2.8.20-X.cygport all
+  cygport ./gtk2-x11-2.10.7-X.cygport all
 
 This will create:
-  /usr/src/gtk2-x11-2.8.20-X-src.tar.bz2
-  /usr/src/gtk2-x11-2.8.20-X.tar.bz2
-  /usr/src/gtk2-x11-devel-2.8.20-X.tar.bz2
-  /usr/src/gtk2-x11-doc-2.8.20-X.tar.bz2
-  /usr/src/gdk-pixbuf2-2.8.20-X.tar.bz2
+  /usr/src/gdk-pixbuf2-2.10.7-X.tar.bz2
+  /usr/src/gtk2-x11-2.10.7-X-src.tar.bz2
+  /usr/src/gtk2-x11-2.10.7-X.tar.bz2
+  /usr/src/gtk2-x11-devel-2.10.7-X.tar.bz2
+  /usr/src/gtk2-x11-doc-2.10.7-X.tar.bz2
 
 -------------------------------------------
 
@@ -78,8 +82,8 @@ Files included in the binary packages:
   /usr/lib/gtk-2.0/2.10.0/immodules/im-inuktitut.la
   /usr/lib/gtk-2.0/2.10.0/immodules/im-ipa.dll
   /usr/lib/gtk-2.0/2.10.0/immodules/im-ipa.la
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-thai-broken.dll
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-thai-broken.la
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-thai.dll
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-thai.la
   /usr/lib/gtk-2.0/2.10.0/immodules/im-ti-er.dll
   /usr/lib/gtk-2.0/2.10.0/immodules/im-ti-er.la
   /usr/lib/gtk-2.0/2.10.0/immodules/im-ti-et.dll
@@ -1212,6 +1216,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 2.10.7-1 -----
+Version bump.
 
 ----- version 2.10.6-1 -----
 Version bump for GNOME 2.16.
