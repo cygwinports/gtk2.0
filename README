@@ -47,18 +47,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtk2-x11-2.10.8-X-src.tar.bz2
+  unpack gtk2-x11-2.10.9-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtk2-x11-2.10.8-X.cygport all
+  cygport ./gtk2-x11-2.10.9-X.cygport all
 
 This will create:
-  /usr/src/gdk-pixbuf2-2.10.8-X.tar.bz2
-  /usr/src/gtk2-x11-2.10.8-X-src.tar.bz2
-  /usr/src/gtk2-x11-2.10.8-X.tar.bz2
-  /usr/src/gtk2-x11-devel-2.10.8-X.tar.bz2
-  /usr/src/gtk2-x11-doc-2.10.8-X.tar.bz2
+  /usr/src/gdk-pixbuf2-2.10.9-X.tar.bz2
+  /usr/src/gtk2-x11-2.10.9-X-src.tar.bz2
+  /usr/src/gtk2-x11-2.10.9-X.tar.bz2
+  /usr/src/gtk2-x11-devel-2.10.9-X.tar.bz2
+  /usr/src/gtk2-x11-doc-2.10.9-X.tar.bz2
 
 -------------------------------------------
 
@@ -96,8 +96,8 @@ Files included in the binary packages:
   /usr/lib/gtk-2.0/2.10.0/printbackends/cygprintbackend-lpr.dll
   /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-file.la
   /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-lpr.la
-  /usr/share/doc/Cygwin/gtk2-x11-2.10.8.README
-  /usr/share/doc/gtk2-x11-2.10.8/*
+  /usr/share/doc/Cygwin/gtk2-x11-2.10.9.README
+  /usr/share/doc/gtk2-x11-2.10.9/*
   /usr/share/gtk-2.0/demo/alphatest.png
   /usr/share/gtk-2.0/demo/apple-red.png
   /usr/share/gtk-2.0/demo/appwindow.c
@@ -1218,6 +1218,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 2.10.9-1 -----
+Version bump.
 
 ----- version 2.10.8-1 -----
 Version bump.
