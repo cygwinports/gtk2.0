@@ -5,7 +5,7 @@ Offering a complete set of widgets, GTK+ is suitable for projects
 ranging from small one-off projects to complete application suites.
 
 Runtime requirements:
-  cygwin-1.5.23-2
+  cygwin-1.5.24-2
   atk-1.12.4-1
   glib2-2.12.9-1
   libX11_6-1.1.1-1
@@ -21,11 +21,11 @@ Runtime requirements:
   libjpeg62-6b-12
   libpng12-1.2.12-1
   libtiff5-3.8.2-3
-  pango-1.14.9-1
+  pango-1.14.10-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.23-2
+  cygwin-1.5.24-2
   automake2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
@@ -47,18 +47,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtk2-x11-2.10.9-X-src.tar.bz2
+  unpack gtk2-x11-2.10.11-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtk2-x11-2.10.9-X.cygport all
+  cygport ./gtk2-x11-2.10.11-X.cygport all
 
 This will create:
-  /usr/src/gdk-pixbuf2-2.10.9-X.tar.bz2
-  /usr/src/gtk2-x11-2.10.9-X-src.tar.bz2
-  /usr/src/gtk2-x11-2.10.9-X.tar.bz2
-  /usr/src/gtk2-x11-devel-2.10.9-X.tar.bz2
-  /usr/src/gtk2-x11-doc-2.10.9-X.tar.bz2
+  /usr/src/gdk-pixbuf2-2.10.11-X.tar.bz2
+  /usr/src/gtk2-x11-2.10.11-X-src.tar.bz2
+  /usr/src/gtk2-x11-2.10.11-X.tar.bz2
+  /usr/src/gtk2-x11-devel-2.10.11-X.tar.bz2
+  /usr/src/gtk2-x11-doc-2.10.11-X.tar.bz2
 
 -------------------------------------------
 
@@ -96,8 +96,8 @@ Files included in the binary packages:
   /usr/lib/gtk-2.0/2.10.0/printbackends/cygprintbackend-lpr.dll
   /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-file.la
   /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-lpr.la
-  /usr/share/doc/Cygwin/gtk2-x11-2.10.9.README
-  /usr/share/doc/gtk2-x11-2.10.9/*
+  /usr/share/doc/Cygwin/gtk2-x11-2.10.11.README
+  /usr/share/doc/gtk2-x11-2.10.11/*
   /usr/share/gtk-2.0/demo/alphatest.png
   /usr/share/gtk-2.0/demo/apple-red.png
   /usr/share/gtk-2.0/demo/appwindow.c
@@ -1218,6 +1218,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 2.10.11-1 -----
+Version bump.
 
 ----- version 2.10.9-1 -----
 Version bump.
