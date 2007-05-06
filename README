@@ -7,7 +7,7 @@ ranging from small one-off projects to complete application suites.
 Runtime requirements:
   cygwin-1.5.24-2
   atk-1.12.4-1
-  glib2-2.12.9-1
+  glib2-2.12.11-1
   libX11_6-1.1.1-1
   libXcursor1-1.1.8-1
   libXext6-1.0.2-1
@@ -15,7 +15,7 @@ Runtime requirements:
   libXi6-1.1.0-1
   libXrandr2-1.1.2-1
   libXrender1-0.9.2-1
-  libcairo2-1.2.6-1
+  libcairo2-1.4.6-1
   libfontconfig1-2.3.2-2
   libintl8-0.15-1
   libjpeg62-6b-12
@@ -29,9 +29,10 @@ Build requirements:
   automake2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
+  cygport-0.2.11-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
-  gtk-doc-1.7-1
+  gtk-doc-1.8-1
   libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
@@ -47,18 +48,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtk2-x11-2.10.11-X-src.tar.bz2
+  unpack gtk2-x11-2.10.12-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtk2-x11-2.10.11-X.cygport all
+  cygport ./gtk2-x11-2.10.12-X.cygport all
 
 This will create:
-  /usr/src/gdk-pixbuf2-2.10.11-X.tar.bz2
-  /usr/src/gtk2-x11-2.10.11-X-src.tar.bz2
-  /usr/src/gtk2-x11-2.10.11-X.tar.bz2
-  /usr/src/gtk2-x11-devel-2.10.11-X.tar.bz2
-  /usr/src/gtk2-x11-doc-2.10.11-X.tar.bz2
+  /usr/src/gdk-pixbuf2-2.10.12-X.tar.bz2
+  /usr/src/gtk2-x11-2.10.12-X-src.tar.bz2
+  /usr/src/gtk2-x11-2.10.12-X.tar.bz2
+  /usr/src/gtk2-x11-devel-2.10.12-X.tar.bz2
+  /usr/src/gtk2-x11-doc-2.10.12-X.tar.bz2
 
 -------------------------------------------
 
@@ -96,8 +97,8 @@ Files included in the binary packages:
   /usr/lib/gtk-2.0/2.10.0/printbackends/cygprintbackend-lpr.dll
   /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-file.la
   /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-lpr.la
-  /usr/share/doc/Cygwin/gtk2-x11-2.10.11.README
-  /usr/share/doc/gtk2-x11-2.10.11/*
+  /usr/share/doc/Cygwin/gtk2-x11-2.10.12.README
+  /usr/share/doc/gtk2-x11-2.10.12/*
   /usr/share/gtk-2.0/demo/alphatest.png
   /usr/share/gtk-2.0/demo/apple-red.png
   /usr/share/gtk-2.0/demo/appwindow.c
@@ -1218,6 +1219,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 2.10.12-1 -----
+Version bump.
 
 ----- version 2.10.11-1 -----
 Version bump.
