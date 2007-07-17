@@ -7,7 +7,7 @@ ranging from small one-off projects to complete application suites.
 Runtime requirements:
   cygwin-1.5.24-2
   atk-1.18.0-1
-  glib2-2.12.12-1
+  glib2-2.12.12-2
   libX11_6-1.1.1-1
   libXcursor1-1.1.8-1
   libXext6-1.0.2-1
@@ -19,7 +19,7 @@ Runtime requirements:
   libfontconfig1-2.3.2-2
   libintl8-0.15-1
   libjpeg62-6b-12
-  libpng12-1.2.12-1
+  libpng12-1.2.18-2
   libtiff5-3.8.2-3
   pango-1.16.4-1
 
@@ -29,7 +29,7 @@ Build requirements:
   automake2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.11-1
+  cygport-0.3.5-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   gtk-doc-1.8-1
@@ -48,17 +48,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtk2-x11-2.10.13-X-src.tar.bz2
+  unpack gtk2-x11-2.10.14-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtk2-x11-2.10.13-X.cygport all
+  cygport ./gtk2-x11-2.10.14-X.cygport all
 
 This will create:
-  /usr/src/gdk-pixbuf2-2.10.13-X.tar.bz2
-  /usr/src/gtk2-x11-2.10.13-X-src.tar.bz2
-  /usr/src/gtk2-x11-2.10.13-X.tar.bz2
-  /usr/src/gtk2-x11-devel-2.10.13-X.tar.bz2
+  /usr/src/gdk-pixbuf2-2.10.14-X.tar.bz2
+  /usr/src/gtk2-x11-2.10.14-X-src.tar.bz2
+  /usr/src/gtk2-x11-2.10.14-X.tar.bz2
+  /usr/src/gtk2-x11-devel-2.10.14-X.tar.bz2
 
 -------------------------------------------
 
@@ -96,8 +96,8 @@ Files included in the binary packages:
   /usr/lib/gtk-2.0/2.10.0/printbackends/cygprintbackend-lpr.dll
   /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-file.la
   /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-lpr.la
-  /usr/share/doc/Cygwin/gtk2-x11-2.10.13.README
-  /usr/share/doc/gtk2-x11-2.10.13/*
+  /usr/share/doc/Cygwin/gtk2-x11-2.10.14.README
+  /usr/share/doc/gtk2-x11-2.10.14/*
   /usr/share/gtk-2.0/demo/alphatest.png
   /usr/share/gtk-2.0/demo/apple-red.png
   /usr/share/gtk-2.0/demo/appwindow.c
@@ -1216,6 +1216,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 2.10.14-1 -----
+Version bump.
 
 ----- version 2.10.13-1 -----
 Version bump.
