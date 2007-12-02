@@ -1,4 +1,4 @@
-category: Libs X11 Gnome
+category: Gnome X11
 requires: cygwin gdk-pixbuf2 atk glib2 gnome-icon-theme libX11_6 libXcursor1 libXext6 libXi6 libXrandr2 libcairo2 pango shared-mime-info
 sdesc: "Multi-platform GUI toolkit (runtime)"
 ldesc: "Offering a complete set of widgets, GTK+ is suitable for 
