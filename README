@@ -5,9 +5,9 @@ Offering a complete set of widgets, GTK+ is suitable for projects
 ranging from small one-off projects to complete application suites.
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.5.25-7
   atk-1.20.0-1
-  glib2-2.14.4-1
+  glib2-2.14.5-1
   libX11_6-1.1.3-1
   libXcursor1-1.1.9-1
   libXdamage1-1.1.1-1
@@ -22,12 +22,12 @@ Runtime requirements:
   libjpeg62-6b-12
   libpng12-1.2.23-1
   libtiff5-3.8.2-3
-  pango-1.18.3-1
+  pango-1.18.4-1
   python
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.24-2
+  cygwin-1.5.25-7
   automake2.5-2.61-1
   automake1.7-1.7.9-3
   binutils-20060817-1
@@ -50,17 +50,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtk2-x11-2.12.3-X-src.tar.bz2
+  unpack gtk2-x11-2.12.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtk2-x11-2.12.3-X.cygport all
+  cygport ./gtk2-x11-2.12.5-X.cygport all
 
 This will create:
-  /usr/src/gdk-pixbuf2-2.12.3-X.tar.bz2
-  /usr/src/gtk2-x11-2.12.3-X-src.tar.bz2
-  /usr/src/gtk2-x11-2.12.3-X.tar.bz2
-  /usr/src/gtk2-x11-devel-2.12.3-X.tar.bz2
+  /usr/src/gdk-pixbuf2-2.12.5-X.tar.bz2
+  /usr/src/gtk2-x11-2.12.5-X-src.tar.bz2
+  /usr/src/gtk2-x11-2.12.5-X.tar.bz2
+  /usr/src/gtk2-x11-devel-2.12.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -104,14 +104,14 @@ Files included in the binary packages:
   /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-file.la
   /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-lpr.la
   /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-test.la
-  /usr/share/doc/Cygwin/gtk2-x11-2.12.3.README
-  /usr/share/doc/gtk2-x11-2.12.3/AUTHORS
-  /usr/share/doc/gtk2-x11-2.12.3/COPYING
-  /usr/share/doc/gtk2-x11-2.12.3/ChangeLog
-  /usr/share/doc/gtk2-x11-2.12.3/HACKING
-  /usr/share/doc/gtk2-x11-2.12.3/INSTALL
-  /usr/share/doc/gtk2-x11-2.12.3/NEWS
-  /usr/share/doc/gtk2-x11-2.12.3/README
+  /usr/share/doc/Cygwin/gtk2-x11-2.12.5.README
+  /usr/share/doc/gtk2-x11-2.12.5/AUTHORS
+  /usr/share/doc/gtk2-x11-2.12.5/COPYING
+  /usr/share/doc/gtk2-x11-2.12.5/ChangeLog
+  /usr/share/doc/gtk2-x11-2.12.5/HACKING
+  /usr/share/doc/gtk2-x11-2.12.5/INSTALL
+  /usr/share/doc/gtk2-x11-2.12.5/NEWS
+  /usr/share/doc/gtk2-x11-2.12.5/README
   /usr/share/gtk-2.0/demo/alphatest.png
   /usr/share/gtk-2.0/demo/apple-red.png
   /usr/share/gtk-2.0/demo/appwindow.c
@@ -1269,6 +1269,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 2.12.5-1 -----
+Version bump for GNOME 2.20.3.
 
 ----- version 2.12.3-1 -----
 Version bump for GNOME 2.20.
