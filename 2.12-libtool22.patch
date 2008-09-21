@@ -1,0 +1,10 @@
+--- origsrc/gtk+-2.12.12/configure.in	2008-09-12 19:01:07.000000000 -0500
++++ src/gtk+-2.12.12/configure.in	2008-09-21 00:34:48.201554000 -0500
+@@ -166,6 +166,7 @@
+ 
+ AC_LIBTOOL_WIN32_DLL
+ AM_PROG_LIBTOOL
++LT_OUTPUT
+ 
+ # Make sure we use 64-bit versions of various file stuff.
+ AC_SYS_LARGEFILE

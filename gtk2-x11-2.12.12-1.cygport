@@ -5,8 +5,11 @@ inherit gnome2
 DESCRIPTION="The GIMP Toolkit for X11, version ${PV_MAJ}"
 HOMEPAGE="http://www.gtk.org/"
 
-API="2.10.0"
+PATCH_URI="2.12-jpeg.patch
+           2.12-libtool22.patch
+           2.12-skip-tests.patch"
 
+api="2.10.0"
 PKG_NAMES="${PN} gdk-pixbuf${PV_MAJ} gdk-pixbuf${PV_MAJ}-devel ${PN}-devel"
 PKG_HINTS="setup gdkpixbuf gdkpixbuf-devel devel"
 PKG_CONTENTS[0]="--exclude=*gdk[-_]pixbuf* --exclude=loaders
@@ -14,7 +17,7 @@ PKG_CONTENTS[0]="--exclude=*gdk[-_]pixbuf* --exclude=loaders
                  --exclude=aclocal --exclude=include --exclude=gtk-doc
                  etc/ usr/bin/ usr/lib/gtk-2.0/ usr/share/"
 PKG_CONTENTS[1]="etc/*/gdk-pixbuf2.sh usr/bin/*gdk_pixbuf*.dll
-                 usr/bin/gdk-pixbuf*.exe usr/lib/gtk-2.0/${API}/loaders/
+                 usr/bin/gdk-pixbuf*.exe usr/lib/gtk-2.0/${api}/loaders/
                  usr/share/man/man1/gdk-pixbuf*"
 PKG_CONTENTS[2]="usr/include/gtk-2.0/gdk-pixbuf*
                  usr/lib/libgdk_pixbuf* usr/lib/pkgconfig/gdk-pixbuf*
