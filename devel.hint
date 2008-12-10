@@ -1,7 +1,0 @@
-category: Gnome X11
-requires: cygwin gtk2-x11 gdk-pixbuf2-devel atk-devel glib2-devel libX11-devel libXcursor-devel libXext-devel libXi-devel libXrandr-devel libcairo-devel pango-devel python
-external-source: gtk2-x11
-sdesc: "Multi-platform GUI toolkit (development)"
-ldesc: "Offering a complete set of widgets, GTK+ is suitable for 
-projects ranging from small one-off projects to complete application 
-suites."

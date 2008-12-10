@@ -1,4 +1,4 @@
-gtk2-x11
+gtk2.0
 -------------------------------------------
 GTK+ is a multi-platform toolkit for creating graphical user interfaces.
 Offering a complete set of widgets, GTK+ is suitable for projects
@@ -6,36 +6,38 @@ ranging from small one-off projects to complete application suites.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  atk-1.22.0-1
-  glib2-2.16.5-1
-  libX11_6-1.1.3-1
-  libXcursor1-1.1.9-1
-  libXdamage1-1.1.1-1
-  libXext6-1.0.3-1
-  libXfixes3-4.0.3-1
-  libXi6-1.1.3-1
-  libXrandr2-1.2.2-1
-  libXrender1-0.9.4-1
-  libcairo2-1.6.4-1
+  libatk1.0_0-1.24.0-1
+  libcairo2-1.8.4-1
   libfontconfig1-2.6.0-1
-  libintl8-0.15-1
+  libglib2.0_0-2.18.3-1
+  libintl8-0.17-2
+  libjasper1-1.900.1-3
   libjpeg62-6b-12
-  libpng12-1.2.31-1
+  libpango1.0_0-1.22.3-1
+  libpng12-1.2.33-1
   libtiff5-3.8.2-3
-  pango-1.20.5-1
+  libX11_6-1.1.5-1
+  libXcomposite1-0.4.0-1
+  libXcursor1-1.1.9-2
+  libXdamage1-1.1.1-2
+  libXext6-1.0.4-1
+  libXfixes3-4.0.3-2
+  libXi6-1.1.3-2
+  libXrandr2-1.2.3-1
+  libXrender1-0.9.4-2
   python
 
 Build requirements:
 (besides corresponding devel packages)
-  automake2.5-2.61-1
-  automake1.7-1.7.9-3
+  automake2.5-2.63-1
+  automake1.9-1.9.6-3
   binutils-20080624-2
-  cygport-0.4.0-1
+  cygport-0.4.2-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-2
-  gtk-doc-1.10-1
-  libtool-2.2.2-2
+  gnome-common-2.24.0-1
+  gtk-doc-1.11-1
+  libtool-2.2.6a-1
   make-3.81-1
   pkg-config-0.23a-2
   sed-4.1.5-2
@@ -50,67 +52,38 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtk2-x11-2.12.12-X-src.tar.bz2
+  unpack gtk2.0-2.12.12-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtk2-x11-2.12.12-X.cygport all
+  cygport ./gtk2.0-2.12.12-X.cygport all
 
 This will create:
-  /usr/src/gdk-pixbuf2-2.12.12-X.tar.bz2
-  /usr/src/gtk2-x11-2.12.12-X-src.tar.bz2
-  /usr/src/gtk2-x11-2.12.12-X.tar.bz2
-  /usr/src/gtk2-x11-devel-2.12.12-X.tar.bz2
+  /usr/src/gail-2.12.12-X-src.tar.bz2
+  /usr/src/gtk2.0-2.12.12-X-src.tar.bz2
+  /usr/src/gtk2.0-demo-2.12.12-X-src.tar.bz2
+  /usr/src/gtk2.0-engines-pixmap-2.12.12-X-src.tar.bz2
+  /usr/src/libgailutil-devel-2.12.12-X.tar.bz2
+  /usr/src/libgailutil18-2.12.12-X.tar.bz2
+  /usr/src/libgdk_pixbuf2.0-devel-2.12.12-X.tar.bz2
+  /usr/src/libgdk_pixbuf2.0_0-2.12.12-X.tar.bz2
+  /usr/src/libgdk_pixbuf_xlib2.0-devel-2.12.12-X.tar.bz2
+  /usr/src/libgdk_pixbuf_xlib2.0_0-2.12.12-X.tar.bz2
+  /usr/src/libgtk2.0-2.12.12-X.tar.bz2
+  /usr/src/libgtk2.0_0-devel-2.12.12-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
-(gtk2-x11)
-  /etc/gtk-2.0/im-multipress.conf
-  /etc/postinstall/gtk2-x11.sh
-  /usr/bin/cyggdk-x11-2.0-0.dll
-  /usr/bin/cyggtk-x11-2.0-0.dll
+(gail)
+  /usr/lib/gtk-2.0/modules/cygferret.dll
+  /usr/lib/gtk-2.0/modules/cyggail.dll
+  /usr/lib/gtk-2.0/modules/libferret.la
+  /usr/lib/gtk-2.0/modules/libgail.la
+
+(gtk2.0-demo)
   /usr/bin/gtk-demo.exe
-  /usr/bin/gtk-query-immodules-2.0.exe
-  /usr/bin/gtk-update-icon-cache.exe
-  /usr/lib/gtk-2.0/2.10.0/engines/cygpixmap.dll
-  /usr/lib/gtk-2.0/2.10.0/engines/libpixmap.la
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-am-et.dll
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-am-et.la
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-cedilla.dll
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-cedilla.la
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-cyrillic-translit.dll
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-cyrillic-translit.la
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-inuktitut.dll
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-inuktitut.la
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-ipa.dll
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-ipa.la
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-multipress.dll
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-multipress.la
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-thai.dll
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-thai.la
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-ti-er.dll
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-ti-er.la
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-ti-et.dll
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-ti-et.la
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-viqr.dll
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-viqr.la
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-xim.dll
-  /usr/lib/gtk-2.0/2.10.0/immodules/im-xim.la
-  /usr/lib/gtk-2.0/2.10.0/printbackends/cygprintbackend-file.dll
-  /usr/lib/gtk-2.0/2.10.0/printbackends/cygprintbackend-lpr.dll
-  /usr/lib/gtk-2.0/2.10.0/printbackends/cygprintbackend-test.dll
-  /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-file.la
-  /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-lpr.la
-  /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-test.la
-  /usr/share/doc/gtk2-x11-2.12.12/AUTHORS
-  /usr/share/doc/gtk2-x11-2.12.12/COPYING
-  /usr/share/doc/gtk2-x11-2.12.12/ChangeLog
-  /usr/share/doc/gtk2-x11-2.12.12/HACKING
-  /usr/share/doc/gtk2-x11-2.12.12/INSTALL
-  /usr/share/doc/gtk2-x11-2.12.12/NEWS
-  /usr/share/doc/gtk2-x11-2.12.12/README
   /usr/share/gtk-2.0/demo/alphatest.png
   /usr/share/gtk-2.0/demo/apple-red.png
   /usr/share/gtk-2.0/demo/appwindow.c
@@ -156,6 +129,187 @@ Files included in the binary packages:
   /usr/share/gtk-2.0/demo/textview.c
   /usr/share/gtk-2.0/demo/tree_store.c
   /usr/share/gtk-2.0/demo/ui_manager.c
+
+(gtk2.0-engines-pixmap)
+  /usr/lib/gtk-2.0/2.10.0/engines/cygpixmap.dll
+  /usr/lib/gtk-2.0/2.10.0/engines/libpixmap.la
+
+(libgailutil18)
+  /usr/bin/cyggailutil-18.dll
+
+(libgailutil-devel)
+  /usr/include/gail-1.0/gail/gailwidget.h
+  /usr/include/gail-1.0/libgail-util/gail-util.h
+  /usr/include/gail-1.0/libgail-util/gailmisc.h
+  /usr/include/gail-1.0/libgail-util/gailtextutil.h
+  /usr/lib/libgailutil.dll.a
+  /usr/lib/libgailutil.la
+  /usr/lib/pkgconfig/gail.pc
+  /usr/share/gtk-doc/html/gail-libgail-util/gail-libgail-util-GailMisc.html
+  /usr/share/gtk-doc/html/gail-libgail-util/gail-libgail-util-GailTextUtil.html
+  /usr/share/gtk-doc/html/gail-libgail-util/gail-libgail-util.devhelp
+  /usr/share/gtk-doc/html/gail-libgail-util/gail-libgail-util.devhelp2
+  /usr/share/gtk-doc/html/gail-libgail-util/home.png
+  /usr/share/gtk-doc/html/gail-libgail-util/index.html
+  /usr/share/gtk-doc/html/gail-libgail-util/index.sgml
+  /usr/share/gtk-doc/html/gail-libgail-util/left.png
+  /usr/share/gtk-doc/html/gail-libgail-util/libgail-util-main.html
+  /usr/share/gtk-doc/html/gail-libgail-util/right.png
+  /usr/share/gtk-doc/html/gail-libgail-util/style.css
+  /usr/share/gtk-doc/html/gail-libgail-util/up.png
+
+(libgdk_pixbuf2.0_0)
+  /etc/postinstall/libgdk_pixbuf2.0_0.sh
+  /etc/preremove/libgdk_pixbuf2.0_0.sh
+  /usr/bin/cyggdk_pixbuf-2.0-0.dll
+  /usr/bin/gdk-pixbuf-query-loaders.exe
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-ani.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-bmp.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-gif.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-icns.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-ico.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-jasper.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-jpeg.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-pcx.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-png.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-pnm.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-ras.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-tga.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-tiff.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-wbmp.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-xbm.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-xpm.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-ani.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-bmp.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-gif.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-icns.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-ico.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-jasper.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-jpeg.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-pcx.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-png.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-pnm.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-ras.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-tga.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-tiff.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-wbmp.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-xbm.la
+  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-xpm.la
+  /usr/share/man/man1/gdk-pixbuf-query-loaders.1.gz
+
+(libgdk_pixbuf2.0-devel)
+  /usr/bin/gdk-pixbuf-csource.exe
+  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-animation.h
+  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-core.h
+  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-enum-types.h
+  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-features.h
+  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-io.h
+  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-loader.h
+  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-marshal.h
+  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h
+  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-transform.h
+  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf.h
+  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixdata.h
+  /usr/lib/libgdk_pixbuf-2.0.dll.a
+  /usr/lib/libgdk_pixbuf-2.0.la
+  /usr/lib/pkgconfig/gdk-pixbuf-2.0.pc
+  /usr/share/gtk-doc/html/gdk-pixbuf/GdkPixbufLoader.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/apa.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/apas02.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/apas03.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/api-index-2-10.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/api-index-2-12.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/api-index-2-14.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/api-index-2-2.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/api-index-2-4.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/api-index-2-6.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/api-index-2-8.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/api-index-deprecated.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/api-index-full.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/composite.png
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-Module-Interface.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-Versioning.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-animation.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-creating.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-csource.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-file-loading.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-file-saving.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-gdk-pixbuf-from-drawables.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-gdk-pixbuf-rendering.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-gdk-pixbuf-xlib-from-drawables.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-gdk-pixbuf-xlib-init.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-gdk-pixbuf-xlib-rendering.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-gdk-pixbuf-xlib-rgb.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-gdk-pixbuf.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-inline.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-query-loaders.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-refcounting.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-scaling.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-util.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf.devhelp
+  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf.devhelp2
+  /usr/share/gtk-doc/html/gdk-pixbuf/home.png
+  /usr/share/gtk-doc/html/gdk-pixbuf/index.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/index.sgml
+  /usr/share/gtk-doc/html/gdk-pixbuf/left.png
+  /usr/share/gtk-doc/html/gdk-pixbuf/license.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/right.png
+  /usr/share/gtk-doc/html/gdk-pixbuf/rn01.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/rn02.html
+  /usr/share/gtk-doc/html/gdk-pixbuf/style.css
+  /usr/share/gtk-doc/html/gdk-pixbuf/up.png
+  /usr/share/man/man1/gdk-pixbuf-csource.1.gz
+
+(libgdk_pixbuf_xlib2.0_0)
+  /usr/bin/cyggdk_pixbuf_xlib-2.0-0.dll
+
+(libgdk_pixbuf_xlib2.0-devel)
+  /usr/include/gtk-2.0/gdk-pixbuf-xlib/gdk-pixbuf-xlib.h
+  /usr/include/gtk-2.0/gdk-pixbuf-xlib/gdk-pixbuf-xlibrgb.h
+  /usr/lib/libgdk_pixbuf_xlib-2.0.dll.a
+  /usr/lib/libgdk_pixbuf_xlib-2.0.la
+  /usr/lib/pkgconfig/gdk-pixbuf-xlib-2.0.pc
+
+(libgtk2.0_0)
+  /etc/gtk-2.0/im-multipress.conf
+  /etc/postinstall/gtk2.0.sh
+  /usr/bin/cyggdk-x11-2.0-0.dll
+  /usr/bin/cyggtk-x11-2.0-0.dll
+  /usr/bin/gtk-query-immodules-2.0.exe
+  /usr/bin/gtk-update-icon-cache.exe
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-am-et.dll
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-am-et.la
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-cedilla.dll
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-cedilla.la
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-cyrillic-translit.dll
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-cyrillic-translit.la
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-inuktitut.dll
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-inuktitut.la
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-ipa.dll
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-ipa.la
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-multipress.dll
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-multipress.la
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-thai.dll
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-thai.la
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-ti-er.dll
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-ti-er.la
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-ti-et.dll
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-ti-et.la
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-viqr.dll
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-viqr.la
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-xim.dll
+  /usr/lib/gtk-2.0/2.10.0/immodules/im-xim.la
+  /usr/lib/gtk-2.0/2.10.0/printbackends/cygprintbackend-file.dll
+  /usr/lib/gtk-2.0/2.10.0/printbackends/cygprintbackend-lpr.dll
+  /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-file.la
+  /usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-lpr.la
+  /usr/share/doc/gtk2.0-2.14.5/AUTHORS
+  /usr/share/doc/gtk2.0-2.14.5/COPYING
+  /usr/share/doc/gtk2.0-2.14.5/ChangeLog
+  /usr/share/doc/gtk2.0-2.14.5/HACKING
+  /usr/share/doc/gtk2.0-2.14.5/INSTALL
+  /usr/share/doc/gtk2.0-2.14.5/NEWS
+  /usr/share/doc/gtk2.0-2.14.5/README
   /usr/share/locale/af/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/af/LC_MESSAGES/gtk20.mo
   /usr/share/locale/am/LC_MESSAGES/gtk20-properties.mo
@@ -166,6 +320,8 @@ Files included in the binary packages:
   /usr/share/locale/ar/LC_MESSAGES/gtk20.mo
   /usr/share/locale/as/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/as/LC_MESSAGES/gtk20.mo
+  /usr/share/locale/ast/LC_MESSAGES/gtk20-properties.mo
+  /usr/share/locale/ast/LC_MESSAGES/gtk20.mo
   /usr/share/locale/az/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/az/LC_MESSAGES/gtk20.mo
   /usr/share/locale/az_IR/LC_MESSAGES/gtk20-properties.mo
@@ -186,6 +342,8 @@ Files included in the binary packages:
   /usr/share/locale/bs/LC_MESSAGES/gtk20.mo
   /usr/share/locale/ca/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/ca/LC_MESSAGES/gtk20.mo
+  /usr/share/locale/ca@valencia/LC_MESSAGES/gtk20-properties.mo
+  /usr/share/locale/ca@valencia/LC_MESSAGES/gtk20.mo
   /usr/share/locale/cs/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/cs/LC_MESSAGES/gtk20.mo
   /usr/share/locale/cy/LC_MESSAGES/gtk20-properties.mo
@@ -246,6 +404,8 @@ Files included in the binary packages:
   /usr/share/locale/ja/LC_MESSAGES/gtk20.mo
   /usr/share/locale/ka/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/ka/LC_MESSAGES/gtk20.mo
+  /usr/share/locale/kn/LC_MESSAGES/gtk20-properties.mo
+  /usr/share/locale/kn/LC_MESSAGES/gtk20.mo
   /usr/share/locale/ko/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/ko/LC_MESSAGES/gtk20.mo
   /usr/share/locale/ku/LC_MESSAGES/gtk20-properties.mo
@@ -256,6 +416,8 @@ Files included in the binary packages:
   /usr/share/locale/lt/LC_MESSAGES/gtk20.mo
   /usr/share/locale/lv/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/lv/LC_MESSAGES/gtk20.mo
+  /usr/share/locale/mai/LC_MESSAGES/gtk20-properties.mo
+  /usr/share/locale/mai/LC_MESSAGES/gtk20.mo
   /usr/share/locale/mi/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/mi/LC_MESSAGES/gtk20.mo
   /usr/share/locale/mk/LC_MESSAGES/gtk20-properties.mo
@@ -286,6 +448,8 @@ Files included in the binary packages:
   /usr/share/locale/pa/LC_MESSAGES/gtk20.mo
   /usr/share/locale/pl/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/pl/LC_MESSAGES/gtk20.mo
+  /usr/share/locale/ps/LC_MESSAGES/gtk20-properties.mo
+  /usr/share/locale/ps/LC_MESSAGES/gtk20.mo
   /usr/share/locale/pt/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/pt/LC_MESSAGES/gtk20.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/gtk20-properties.mo
@@ -296,6 +460,8 @@ Files included in the binary packages:
   /usr/share/locale/ru/LC_MESSAGES/gtk20.mo
   /usr/share/locale/rw/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/rw/LC_MESSAGES/gtk20.mo
+  /usr/share/locale/si/LC_MESSAGES/gtk20-properties.mo
+  /usr/share/locale/si/LC_MESSAGES/gtk20.mo
   /usr/share/locale/sk/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/sk/LC_MESSAGES/gtk20.mo
   /usr/share/locale/sl/LC_MESSAGES/gtk20-properties.mo
@@ -304,10 +470,10 @@ Files included in the binary packages:
   /usr/share/locale/sq/LC_MESSAGES/gtk20.mo
   /usr/share/locale/sr/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/sr/LC_MESSAGES/gtk20.mo
-  /usr/share/locale/sr@Latn/LC_MESSAGES/gtk20-properties.mo
-  /usr/share/locale/sr@Latn/LC_MESSAGES/gtk20.mo
   /usr/share/locale/sr@ije/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/sr@ije/LC_MESSAGES/gtk20.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/gtk20-properties.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/gtk20.mo
   /usr/share/locale/sv/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/sv/LC_MESSAGES/gtk20.mo
   /usr/share/locale/ta/LC_MESSAGES/gtk20-properties.mo
@@ -344,120 +510,16 @@ Files included in the binary packages:
   /usr/share/locale/zh_HK/LC_MESSAGES/gtk20.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/gtk20-properties.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/gtk20.mo
-  /usr/share/man/man1/gdk-pixbuf-csource.1.gz
-  /usr/share/man/man1/gdk-pixbuf-query-loaders.1.gz
-  /usr/share/man/man1/gtk-builder-convert.1.gz
   /usr/share/man/man1/gtk-query-immodules-2.0.1.gz
   /usr/share/man/man1/gtk-update-icon-cache.1.gz
   /usr/share/themes/Default/gtk-2.0-key/gtkrc
   /usr/share/themes/Emacs/gtk-2.0-key/gtkrc
   /usr/share/themes/Raleigh/gtk-2.0/gtkrc
 
-
-(gdk-pixbuf2)
-  /etc/postinstall/gdk-pixbuf2.sh
-  /etc/preremove/gdk-pixbuf2.sh
-  /usr/bin/cyggdk_pixbuf-2.0-0.dll
-  /usr/bin/cyggdk_pixbuf_xlib-2.0-0.dll
-  /usr/bin/gdk-pixbuf-csource.exe
-  /usr/bin/gdk-pixbuf-query-loaders.exe
-  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-ani.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-bmp.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-gif.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-ico.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-jpeg.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-pcx.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-png.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-pnm.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-ras.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-tga.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-tiff.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-wbmp.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-xbm.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/cygpixbufloader-xpm.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-ani.la
-  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-bmp.la
-  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-gif.la
-  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-ico.la
-  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-jpeg.la
-  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-pcx.la
-  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-png.la
-  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-pnm.la
-  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-ras.la
-  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-tga.la
-  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-tiff.la
-  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-wbmp.la
-  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-xbm.la
-  /usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-xpm.la
-
-
-(gdk-pixbuf2-devel)
-  /usr/include/gtk-2.0/gdk-pixbuf-xlib/gdk-pixbuf-xlib.h
-  /usr/include/gtk-2.0/gdk-pixbuf-xlib/gdk-pixbuf-xlibrgb.h
-  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-animation.h
-  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-core.h
-  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-enum-types.h
-  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-features.h
-  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-io.h
-  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-loader.h
-  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-marshal.h
-  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h
-  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-transform.h
-  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf.h
-  /usr/include/gtk-2.0/gdk-pixbuf/gdk-pixdata.h
-  /usr/lib/libgdk_pixbuf-2.0.dll.a
-  /usr/lib/libgdk_pixbuf-2.0.la
-  /usr/lib/libgdk_pixbuf_xlib-2.0.dll.a
-  /usr/lib/libgdk_pixbuf_xlib-2.0.la
-  /usr/lib/pkgconfig/gdk-pixbuf-2.0.pc
-  /usr/lib/pkgconfig/gdk-pixbuf-xlib-2.0.pc
-  /usr/share/gtk-doc/html/gdk-pixbuf/GdkPixbufLoader.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/apa.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/apas02.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/apas03.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/composite.png
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-Module-Interface.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-Versioning.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-animation.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-creating.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-csource.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-file-loading.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-file-saving.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-gdk-pixbuf-from-drawables.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-gdk-pixbuf-rendering.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-gdk-pixbuf-xlib-from-drawables.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-gdk-pixbuf-xlib-init.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-gdk-pixbuf-xlib-rendering.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-gdk-pixbuf-xlib-rgb.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-gdk-pixbuf.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-inline.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-query-loaders.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-refcounting.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-scaling.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf-util.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf.devhelp
-  /usr/share/gtk-doc/html/gdk-pixbuf/gdk-pixbuf.devhelp2
-  /usr/share/gtk-doc/html/gdk-pixbuf/home.png
-  /usr/share/gtk-doc/html/gdk-pixbuf/index.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/index.sgml
-  /usr/share/gtk-doc/html/gdk-pixbuf/ix01.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/ix02.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/ix03.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/ix04.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/ix05.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/ix06.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/left.png
-  /usr/share/gtk-doc/html/gdk-pixbuf/license.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/right.png
-  /usr/share/gtk-doc/html/gdk-pixbuf/rn01.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/rn02.html
-  /usr/share/gtk-doc/html/gdk-pixbuf/style.css
-  /usr/share/gtk-doc/html/gdk-pixbuf/up.png
-
-(gtk2-x11-devel)
+(libgtk2.0-devel)
   /usr/bin/gtk-builder-convert
   /usr/include/gtk-2.0/gdk/gdk.h
-  /usr/include/gtk-2.0/gdk/gdkalias.h
+  /usr/include/gtk-2.0/gdk/gdkapplaunchcontext.h
   /usr/include/gtk-2.0/gdk/gdkcairo.h
   /usr/include/gtk-2.0/gdk/gdkcolor.h
   /usr/include/gtk-2.0/gdk/gdkcursor.h
@@ -484,6 +546,7 @@ Files included in the binary packages:
   /usr/include/gtk-2.0/gdk/gdkscreen.h
   /usr/include/gtk-2.0/gdk/gdkselection.h
   /usr/include/gtk-2.0/gdk/gdkspawn.h
+  /usr/include/gtk-2.0/gdk/gdktestutils.h
   /usr/include/gtk-2.0/gdk/gdktypes.h
   /usr/include/gtk-2.0/gdk/gdkvisual.h
   /usr/include/gtk-2.0/gdk/gdkwindow.h
@@ -549,7 +612,6 @@ Files included in the binary packages:
   /usr/include/gtk-2.0/gtk/gtkfilechooserwidget.h
   /usr/include/gtk-2.0/gtk/gtkfilefilter.h
   /usr/include/gtk-2.0/gtk/gtkfilesel.h
-  /usr/include/gtk-2.0/gtk/gtkfilesystem.h
   /usr/include/gtk-2.0/gtk/gtkfixed.h
   /usr/include/gtk-2.0/gtk/gtkfontbutton.h
   /usr/include/gtk-2.0/gtk/gtkfontsel.h
@@ -564,6 +626,7 @@ Files included in the binary packages:
   /usr/include/gtk-2.0/gtk/gtkhscale.h
   /usr/include/gtk-2.0/gtk/gtkhscrollbar.h
   /usr/include/gtk-2.0/gtk/gtkhseparator.h
+  /usr/include/gtk-2.0/gtk/gtkhsv.h
   /usr/include/gtk-2.0/gtk/gtkiconfactory.h
   /usr/include/gtk-2.0/gtk/gtkicontheme.h
   /usr/include/gtk-2.0/gtk/gtkiconview.h
@@ -593,6 +656,7 @@ Files included in the binary packages:
   /usr/include/gtk-2.0/gtk/gtkmessagedialog.h
   /usr/include/gtk-2.0/gtk/gtkmisc.h
   /usr/include/gtk-2.0/gtk/gtkmodules.h
+  /usr/include/gtk-2.0/gtk/gtkmountoperation.h
   /usr/include/gtk-2.0/gtk/gtknotebook.h
   /usr/include/gtk-2.0/gtk/gtkobject.h
   /usr/include/gtk-2.0/gtk/gtkoldeditable.h
@@ -633,6 +697,7 @@ Files included in the binary packages:
   /usr/include/gtk-2.0/gtk/gtkseparatormenuitem.h
   /usr/include/gtk-2.0/gtk/gtkseparatortoolitem.h
   /usr/include/gtk-2.0/gtk/gtksettings.h
+  /usr/include/gtk-2.0/gtk/gtkshow.h
   /usr/include/gtk-2.0/gtk/gtksignal.h
   /usr/include/gtk-2.0/gtk/gtksizegroup.h
   /usr/include/gtk-2.0/gtk/gtksocket.h
@@ -643,6 +708,7 @@ Files included in the binary packages:
   /usr/include/gtk-2.0/gtk/gtkstyle.h
   /usr/include/gtk-2.0/gtk/gtktable.h
   /usr/include/gtk-2.0/gtk/gtktearoffmenuitem.h
+  /usr/include/gtk-2.0/gtk/gtktestutils.h
   /usr/include/gtk-2.0/gtk/gtktext.h
   /usr/include/gtk-2.0/gtk/gtktextbuffer.h
   /usr/include/gtk-2.0/gtk/gtktextbufferrichtext.h
@@ -661,6 +727,7 @@ Files included in the binary packages:
   /usr/include/gtk-2.0/gtk/gtktoolbar.h
   /usr/include/gtk-2.0/gtk/gtktoolbutton.h
   /usr/include/gtk-2.0/gtk/gtktoolitem.h
+  /usr/include/gtk-2.0/gtk/gtktoolshell.h
   /usr/include/gtk-2.0/gtk/gtktooltip.h
   /usr/include/gtk-2.0/gtk/gtktooltips.h
   /usr/include/gtk-2.0/gtk/gtktree.h
@@ -693,6 +760,7 @@ Files included in the binary packages:
   /usr/include/gtk-unix-print-2.0/gtk/gtkprinter.h
   /usr/include/gtk-unix-print-2.0/gtk/gtkprintjob.h
   /usr/include/gtk-unix-print-2.0/gtk/gtkprintunixdialog.h
+  /usr/include/gtk-unix-print-2.0/gtk/gtkunixprint.h
   /usr/lib/gtk-2.0/include/gdkconfig.h
   /usr/lib/libgdk-x11-2.0.dll.a
   /usr/lib/libgdk-x11-2.0.la
@@ -708,6 +776,15 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gdk/GdkDisplayManager.html
   /usr/share/gtk-doc/html/gdk/GdkScreen.html
   /usr/share/gtk-doc/html/gdk/X_cursor.png
+  /usr/share/gtk-doc/html/gdk/api-index-2-10.html
+  /usr/share/gtk-doc/html/gdk/api-index-2-12.html
+  /usr/share/gtk-doc/html/gdk/api-index-2-14.html
+  /usr/share/gtk-doc/html/gdk/api-index-2-2.html
+  /usr/share/gtk-doc/html/gdk/api-index-2-4.html
+  /usr/share/gtk-doc/html/gdk/api-index-2-6.html
+  /usr/share/gtk-doc/html/gdk/api-index-2-8.html
+  /usr/share/gtk-doc/html/gdk/api-index-deprecated.html
+  /usr/share/gtk-doc/html/gdk/api-index-full.html
   /usr/share/gtk-doc/html/gdk/arrow.png
   /usr/share/gtk-doc/html/gdk/based_arrow_down.png
   /usr/share/gtk-doc/html/gdk/based_arrow_up.png
@@ -734,6 +811,7 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gdk/draped_box.png
   /usr/share/gtk-doc/html/gdk/exchange.png
   /usr/share/gtk-doc/html/gdk/fleur.png
+  /usr/share/gtk-doc/html/gdk/gdk-Application-launching.html
   /usr/share/gtk-doc/html/gdk/gdk-Bitmaps-and-Pixmaps.html
   /usr/share/gtk-doc/html/gdk/gdk-Cairo-Interaction.html
   /usr/share/gtk-doc/html/gdk/gdk-Colormaps-and-Colors.html
@@ -755,6 +833,7 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gdk/gdk-Points-Rectangles-and-Regions.html
   /usr/share/gtk-doc/html/gdk/gdk-Properties-and-Atoms.html
   /usr/share/gtk-doc/html/gdk/gdk-Selections.html
+  /usr/share/gtk-doc/html/gdk/gdk-Testing.html
   /usr/share/gtk-doc/html/gdk/gdk-Threads.html
   /usr/share/gtk-doc/html/gdk/gdk-Visuals.html
   /usr/share/gtk-doc/html/gdk/gdk-Windows.html
@@ -771,14 +850,6 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gdk/index.html
   /usr/share/gtk-doc/html/gdk/index.sgml
   /usr/share/gtk-doc/html/gdk/iron_cross.png
-  /usr/share/gtk-doc/html/gdk/ix01.html
-  /usr/share/gtk-doc/html/gdk/ix02.html
-  /usr/share/gtk-doc/html/gdk/ix03.html
-  /usr/share/gtk-doc/html/gdk/ix04.html
-  /usr/share/gtk-doc/html/gdk/ix05.html
-  /usr/share/gtk-doc/html/gdk/ix06.html
-  /usr/share/gtk-doc/html/gdk/ix07.html
-  /usr/share/gtk-doc/html/gdk/ix08.html
   /usr/share/gtk-doc/html/gdk/left.png
   /usr/share/gtk-doc/html/gdk/left_ptr.png
   /usr/share/gtk-doc/html/gdk/left_side.png
@@ -982,6 +1053,7 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gtk/GtkToggleToolButton.html
   /usr/share/gtk-doc/html/gtk/GtkToolButton.html
   /usr/share/gtk-doc/html/gtk/GtkToolItem.html
+  /usr/share/gtk-doc/html/gtk/GtkToolShell.html
   /usr/share/gtk-doc/html/gtk/GtkToolbar.html
   /usr/share/gtk-doc/html/gtk/GtkTooltip.html
   /usr/share/gtk-doc/html/gtk/GtkTooltips.html
@@ -1025,6 +1097,15 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gtk/TreeWidgetObjects.html
   /usr/share/gtk-doc/html/gtk/WindowWidgets.html
   /usr/share/gtk-doc/html/gtk/accel-label.png
+  /usr/share/gtk-doc/html/gtk/api-index-2-10.html
+  /usr/share/gtk-doc/html/gtk/api-index-2-12.html
+  /usr/share/gtk-doc/html/gtk/api-index-2-14.html
+  /usr/share/gtk-doc/html/gtk/api-index-2-2.html
+  /usr/share/gtk-doc/html/gtk/api-index-2-4.html
+  /usr/share/gtk-doc/html/gtk/api-index-2-6.html
+  /usr/share/gtk-doc/html/gtk/api-index-2-8.html
+  /usr/share/gtk-doc/html/gtk/api-index-deprecated.html
+  /usr/share/gtk-doc/html/gtk/api-index-full.html
   /usr/share/gtk-doc/html/gtk/assistant.png
   /usr/share/gtk-doc/html/gtk/button.png
   /usr/share/gtk-doc/html/gtk/ch01.html
@@ -1050,6 +1131,7 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gtk/gtk-Clipboards.html
   /usr/share/gtk-doc/html/gtk/gtk-Drag-and-Drop.html
   /usr/share/gtk-doc/html/gtk/gtk-Feature-Test-Macros.html
+  /usr/share/gtk-doc/html/gtk/gtk-Filesystem-utilities.html
   /usr/share/gtk-doc/html/gtk/gtk-General.html
   /usr/share/gtk-doc/html/gtk/gtk-Graphics-Contexts.html
   /usr/share/gtk-doc/html/gtk/gtk-GtkPaperSize.html
@@ -1062,6 +1144,7 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gtk/gtk-Signals.html
   /usr/share/gtk-doc/html/gtk/gtk-Standard-Enumerations.html
   /usr/share/gtk-doc/html/gtk/gtk-Stock-Items.html
+  /usr/share/gtk-doc/html/gtk/gtk-Testing.html
   /usr/share/gtk-doc/html/gtk/gtk-Themeable-Stock-Images.html
   /usr/share/gtk-doc/html/gtk/gtk-Types.html
   /usr/share/gtk-doc/html/gtk/gtk-about.png
@@ -1168,7 +1251,11 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gtk/gtk-osx.html
   /usr/share/gtk-doc/html/gtk/gtk-paste.png
   /usr/share/gtk-doc/html/gtk/gtk-preferences.png
+  /usr/share/gtk-doc/html/gtk/gtk-print-error.png
+  /usr/share/gtk-doc/html/gtk/gtk-print-paused.png
   /usr/share/gtk-doc/html/gtk/gtk-print-preview.png
+  /usr/share/gtk-doc/html/gtk/gtk-print-report.png
+  /usr/share/gtk-doc/html/gtk/gtk-print-warning.png
   /usr/share/gtk-doc/html/gtk/gtk-print.png
   /usr/share/gtk-doc/html/gtk/gtk-properties.png
   /usr/share/gtk-doc/html/gtk/gtk-query-immodules-2.0.html
@@ -1222,14 +1309,6 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gtk/image.png
   /usr/share/gtk-doc/html/gtk/index.html
   /usr/share/gtk-doc/html/gtk/index.sgml
-  /usr/share/gtk-doc/html/gtk/ix01.html
-  /usr/share/gtk-doc/html/gtk/ix02.html
-  /usr/share/gtk-doc/html/gtk/ix03.html
-  /usr/share/gtk-doc/html/gtk/ix04.html
-  /usr/share/gtk-doc/html/gtk/ix05.html
-  /usr/share/gtk-doc/html/gtk/ix06.html
-  /usr/share/gtk-doc/html/gtk/ix07.html
-  /usr/share/gtk-doc/html/gtk/ix08.html
   /usr/share/gtk-doc/html/gtk/label.png
   /usr/share/gtk-doc/html/gtk/left.png
   /usr/share/gtk-doc/html/gtk/link-button.png
@@ -1264,10 +1343,14 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gtk/up.png
   /usr/share/gtk-doc/html/gtk/volumebutton.png
   /usr/share/gtk-doc/html/gtk/window.png
+  /usr/share/man/man1/gtk-builder-convert.1.gz
 
---------------------
+----------------------
 
 Port Notes:
+
+----- version 2.14.5-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 2.12.12-1 -----
 Version bump.
