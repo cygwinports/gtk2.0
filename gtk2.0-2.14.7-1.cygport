@@ -46,6 +46,7 @@ libgailutil_devel_CONTENTS="usr/include/gail-1.0/ usr/lib/libgailutil.*
 DIFF_EXCLUDES="gdk.rc"
 
 CYGCONF_ARGS="
+	--disable-glibtest
 	--enable-explicit-deps
 	--enable-xkb
 	--disable-shm
