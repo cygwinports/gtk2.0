@@ -49,10 +49,8 @@ CYGCONF_ARGS="
 	--disable-glibtest
 	--enable-explicit-deps
 	--enable-xkb
-	--disable-shm
 	--disable-test-print-backend
 	--disable-visibility
-	--disable-xinerama
 	--with-gdktarget=x11
 	--with-xinput
 "
