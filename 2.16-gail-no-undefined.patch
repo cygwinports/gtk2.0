@@ -9,8 +9,8 @@
  no_undefined = -no-undefined
  endif
  
---- origsrc/gtk+-2.14.5/modules/other/gail/libgail-util/Makefile.am	2008-11-24 00:35:55.000000000 -0600
-+++ src/gtk+-2.14.5/modules/other/gail/libgail-util/Makefile.am	2008-12-04 18:33:10.765625000 -0600
+--- origsrc/gtk+-2.16.0/modules/other/gail/libgail-util/Makefile.am	2009-03-13 08:40:52.000000000 -0500
++++ src/gtk+-2.16.0/modules/other/gail/libgail-util/Makefile.am	2009-03-16 22:23:54.937500000 -0500
 @@ -1,9 +1,11 @@
  include $(top_srcdir)/Makefile.decl
  
@@ -19,11 +19,11 @@
 +no_undefined = -no-undefined
 +endif
  if OS_WIN32
- export_symbols = -export-symbols gailutil.def
+ export_symbols = -export-symbols $(srcdir)/gailutil.def
 -no_undefined = -no-undefined
- install-libtool-import-lib:
- 	$(INSTALL) .libs/libgailutil.dll.a $(DESTDIR)$(libdir)
- uninstall-libtool-import-lib:
+ install-def-file: gailutil.def
+ 	$(INSTALL) $(srcdir)/gailutil.def $(DESTDIR)$(libdir)
+ uninstall-def-file:
 --- origsrc/gtk+-2.14.5/modules/other/gail/tests/Makefile.am	2008-11-24 00:35:54.000000000 -0600
 +++ src/gtk+-2.14.5/modules/other/gail/tests/Makefile.am	2008-12-04 18:37:17.671875000 -0600
 @@ -1,7 +1,7 @@
