@@ -8,7 +8,6 @@ HOMEPAGE="http://www.gtk.org/"
 PATCH_URI="
 	2.12-jpeg.patch
 	2.12-skip-tests.patch
-	2.16-gail-no-undefined.patch
 "
 
 api="2.10.0"
