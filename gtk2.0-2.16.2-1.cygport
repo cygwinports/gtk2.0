@@ -47,6 +47,7 @@ DIFF_EXCLUDES="gdk.rc"
 CYGCONF_ARGS="
 	--disable-glibtest
 	--enable-explicit-deps
+	--enable-man
 	--enable-xkb
 	--disable-test-print-backend
 	--disable-visibility
