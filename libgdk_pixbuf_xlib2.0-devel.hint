@@ -1,5 +1,5 @@
 category: Graphics Gnome
-requires: cygwin libgdk_pixbuf_xlib2.0_0 libglib2.0-devel libgdk_pixbuf2.0-devel libX11-devel
+requires: libgdk_pixbuf_xlib2.0_0 libglib2.0-devel libgdk_pixbuf2.0-devel libX11-devel
 external-source: gtk2.0
 sdesc: "GNOME Pixel buffer library (X11 development)"
 ldesc: "Offering a complete set of widgets, GTK+ is suitable for 

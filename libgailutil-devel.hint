@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libgailutil18 libatk1.0-devel libglib2.0-devel libgtk2.0-devel libpango1.0-devel
+requires: libgailutil18 libatk1.0-devel libglib2.0-devel libgtk2.0-devel libpango1.0-devel
 external-source: gtk2.0
 sdesc: "Accessibility support for GTK+ (libdevel)"
 ldesc: "GAIL provides accessibility support for gtk+ by implementing 
