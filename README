@@ -7,14 +7,14 @@ ranging from small one-off projects to complete application suites.
 Runtime requirements:
   cygwin-1.7.0-50
   libatk1.0_0-1.26.0-1
-  libcairo2-1.8.6-10
+  libcairo2-1.8.8-1
   libfontconfig1-2.6.0-10
   libgcc1-4.3.2-2
-  libglib2.0_0-2.20.3-1
+  libglib2.0_0-2.20.4-1
   libintl8-0.17-10
   libjasper1-1.900.1-1
   libjpeg62-6b-20
-  libpango1.0_0-1.24.2-1
+  libpango1.0_0-1.24.3-1
   libpng12-1.2.35-10
   libtiff5-3.8.2-3
   libX11_6-1.2.1-1
@@ -54,25 +54,25 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtk2.0-2.16.3-X-src.tar.bz2
+  unpack gtk2.0-2.16.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtk2.0-2.16.3-X.cygport all
+  cygport ./gtk2.0-2.16.4-X.cygport all
 
 This will create:
-  /usr/src/gail-2.16.3-X-src.tar.bz2
-  /usr/src/gtk2.0-2.16.3-X-src.tar.bz2
-  /usr/src/gtk2.0-demo-2.16.3-X-src.tar.bz2
-  /usr/src/gtk2.0-engines-pixmap-2.16.3-X-src.tar.bz2
-  /usr/src/libgailutil-devel-2.16.3-X.tar.bz2
-  /usr/src/libgailutil18-2.16.3-X.tar.bz2
-  /usr/src/libgdk_pixbuf2.0-devel-2.16.3-X.tar.bz2
-  /usr/src/libgdk_pixbuf2.0_0-2.16.3-X.tar.bz2
-  /usr/src/libgdk_pixbuf_xlib2.0-devel-2.16.3-X.tar.bz2
-  /usr/src/libgdk_pixbuf_xlib2.0_0-2.16.3-X.tar.bz2
-  /usr/src/libgtk2.0-2.16.3-X.tar.bz2
-  /usr/src/libgtk2.0_0-devel-2.16.3-X.tar.bz2
+  /usr/src/gail-2.16.4-X-src.tar.bz2
+  /usr/src/gtk2.0-2.16.4-X-src.tar.bz2
+  /usr/src/gtk2.0-demo-2.16.4-X-src.tar.bz2
+  /usr/src/gtk2.0-engines-pixmap-2.16.4-X-src.tar.bz2
+  /usr/src/libgailutil-devel-2.16.4-X.tar.bz2
+  /usr/src/libgailutil18-2.16.4-X.tar.bz2
+  /usr/src/libgdk_pixbuf2.0-devel-2.16.4-X.tar.bz2
+  /usr/src/libgdk_pixbuf2.0_0-2.16.4-X.tar.bz2
+  /usr/src/libgdk_pixbuf_xlib2.0-devel-2.16.4-X.tar.bz2
+  /usr/src/libgdk_pixbuf_xlib2.0_0-2.16.4-X.tar.bz2
+  /usr/src/libgtk2.0-2.16.4-X.tar.bz2
+  /usr/src/libgtk2.0_0-devel-2.16.4-X.tar.bz2
 
 -------------------------------------------
 
@@ -1373,7 +1373,7 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.16.3-1 -----
+----- version 2.16.4-1 -----
 Version bump.
 
 ----- version 2.16.2-1 -----
