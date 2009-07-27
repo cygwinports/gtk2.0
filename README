@@ -5,19 +5,19 @@ Offering a complete set of widgets, GTK+ is suitable for projects
 ranging from small one-off projects to complete application suites.
 
 Runtime requirements:
-  cygwin-1.7.0-50
+  cygwin-1.7.0-52
   libatk1.0_0-1.26.0-1
   libcairo2-1.8.8-1
-  libfontconfig1-2.6.0-10
+  libfontconfig1-2.7.0-1
   libgcc1-4.3.2-2
   libglib2.0_0-2.20.4-1
-  libintl8-0.17-10
+  libintl8-0.17-11
   libjasper1-1.900.1-1
   libjpeg62-6b-20
-  libpango1.0_0-1.24.3-1
+  libpango1.0_0-1.24.5-1
   libpng12-1.2.35-10
   libtiff5-3.8.2-3
-  libX11_6-1.2.1-1
+  libX11_6-1.2.2-1
   libXcomposite1-0.4.0-10
   libXcursor1-1.1.9-10
   libXdamage1-1.1.1-10
@@ -34,12 +34,12 @@ Build requirements:
   automake2.5-2.63-10
   automake1.7-1.7.9-10
   binutils-20080624-2
-  cygport-0.9.7-1
+  cygport-0.9.8-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
   gnome-common-2.26.0-2
   gtk-doc-1.11-2
-  libtool-2.2.7a-13
+  libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -54,25 +54,25 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtk2.0-2.16.4-X-src.tar.bz2
+  unpack gtk2.0-2.16.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtk2.0-2.16.4-X.cygport all
+  cygport ./gtk2.0-2.16.5-X.cygport all
 
 This will create:
-  /usr/src/gail-2.16.4-X-src.tar.bz2
-  /usr/src/gtk2.0-2.16.4-X-src.tar.bz2
-  /usr/src/gtk2.0-demo-2.16.4-X-src.tar.bz2
-  /usr/src/gtk2.0-engines-pixmap-2.16.4-X-src.tar.bz2
-  /usr/src/libgailutil-devel-2.16.4-X.tar.bz2
-  /usr/src/libgailutil18-2.16.4-X.tar.bz2
-  /usr/src/libgdk_pixbuf2.0-devel-2.16.4-X.tar.bz2
-  /usr/src/libgdk_pixbuf2.0_0-2.16.4-X.tar.bz2
-  /usr/src/libgdk_pixbuf_xlib2.0-devel-2.16.4-X.tar.bz2
-  /usr/src/libgdk_pixbuf_xlib2.0_0-2.16.4-X.tar.bz2
-  /usr/src/libgtk2.0-2.16.4-X.tar.bz2
-  /usr/src/libgtk2.0_0-devel-2.16.4-X.tar.bz2
+  /usr/src/gail-2.16.5-X-src.tar.bz2
+  /usr/src/gtk2.0-2.16.5-X-src.tar.bz2
+  /usr/src/gtk2.0-demo-2.16.5-X-src.tar.bz2
+  /usr/src/gtk2.0-engines-pixmap-2.16.5-X-src.tar.bz2
+  /usr/src/libgailutil-devel-2.16.5-X.tar.bz2
+  /usr/src/libgailutil18-2.16.5-X.tar.bz2
+  /usr/src/libgdk_pixbuf2.0-devel-2.16.5-X.tar.bz2
+  /usr/src/libgdk_pixbuf2.0_0-2.16.5-X.tar.bz2
+  /usr/src/libgdk_pixbuf_xlib2.0-devel-2.16.5-X.tar.bz2
+  /usr/src/libgdk_pixbuf_xlib2.0_0-2.16.5-X.tar.bz2
+  /usr/src/libgtk2.0-2.16.5-X.tar.bz2
+  /usr/src/libgtk2.0_0-devel-2.16.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -1373,7 +1373,7 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.16.4-1 -----
+----- version 2.16.5-1 -----
 Version bump.
 
 ----- version 2.16.2-1 -----
