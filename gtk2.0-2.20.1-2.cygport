@@ -9,6 +9,7 @@ PATCH_URI="
 	2.12-skip-tests.patch
 	2.18.3-not-win32.patch
 	2.20.1-introspection-vpath.patch
+	2.20.1-libpng14.patch
 "
 
 api="2.10.0"
