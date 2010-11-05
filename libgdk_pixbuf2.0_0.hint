@@ -1,7 +1,0 @@
-category: Graphics Gnome
-requires: libgcc1 libglib2.0_0 libintl8 libjasper1 libjpeg8 libpng14 libtiff5
-external-source: gtk2.0
-sdesc: "GNOME Pixel buffer library (runtime)"
-ldesc: "Offering a complete set of widgets, GTK+ is suitable for 
-projects ranging from small one-off projects to complete application 
-suites."
