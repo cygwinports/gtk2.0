@@ -1,0 +1,41 @@
+ORIG_PN=gtk+
+
+inherit gnome2
+
+DESCRIPTION="The GIMP Toolkit for X11, version ${PV_MAJ}"
+HOMEPAGE="http://www.gtk.org/"
+
+PATCH_URI="
+	2.18.3-not-win32.patch
+	2.22-introspection.patch
+"
+
+PKG_NAMES="${PN} ${PN}-demo ${PN}-engines-pixmap libgtk2.0_0 libgtk2.0-devel
+           girepository-Gtk2.0 ${PN}-gail libgailutil18 libgailutil-devel"
+gtk2_0_demo_CONTENTS="usr/bin/gtk-demo.exe usr/share/gtk-2.0/demo/"
+gtk2_0_engines_pixmap_CONTENTS="usr/lib/gtk-2.0/*/engines/"
+libgtk2_0_0_CONTENTS="--exclude=gtk-builder-convert --exclude=*gailutil*
+                 --exclude=include --exclude=gtk-demo.* etc/ usr/bin/
+                 usr/lib/gtk-2.0/*/immodules/ usr/lib/gtk-2.0/*/printbackends/
+                 usr/share/doc/ usr/share/locale/ usr/share/man/ usr/share/themes/"
+libgtk2_0_devel_CONTENTS="--exclude=*gail* usr/bin/gtk-builder-convert
+                 usr/include/ usr/lib/gtk-2.0/include/ usr/lib/lib*
+                 usr/lib/pkgconfig/ usr/share/aclocal/ usr/share/gtk-doc/"
+girepository_Gtk2_0_CONTENTS="usr/*/gir*/*-2.0.*"
+gtk2_0_gail_CONTENTS="usr/lib/gtk-2.0/modules/"
+libgailutil18_CONTENTS="usr/bin/cyggailutil-18.dll"
+libgailutil_devel_CONTENTS="usr/include/gail-1.0/ usr/lib/libgailutil.*
+                 usr/lib/pkgconfig/gail.pc usr/share/gtk-doc/html/gail*"
+
+DIFF_EXCLUDES="gdk.rc"
+
+CYGCONF_ARGS="
+	--disable-glibtest
+	--enable-explicit-deps
+	--enable-man
+	--enable-xkb
+	--disable-test-print-backend
+	--disable-visibility
+	--with-gdktarget=x11
+	--with-xinput
+"
