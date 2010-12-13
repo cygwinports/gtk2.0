@@ -7,10 +7,9 @@ HOMEPAGE="http://www.gtk.org/"
 
 PATCH_URI="
 	2.18.3-not-win32.patch
-	2.22-introspection.patch
 "
 
-PKG_NAMES="${PN} ${PN}-demo ${PN}-engines-pixmap libgtk2.0_0 libgtk2.0-devel
+PKG_NAMES="${PN}-demo ${PN}-engines-pixmap libgtk2.0_0 libgtk2.0-devel
            girepository-Gtk2.0 ${PN}-gail libgailutil18 libgailutil-devel"
 gtk2_0_demo_CONTENTS="usr/bin/gtk-demo.exe usr/share/gtk-2.0/demo/"
 gtk2_0_engines_pixmap_CONTENTS="usr/lib/gtk-2.0/*/engines/"
