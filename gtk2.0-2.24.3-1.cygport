@@ -38,3 +38,4 @@ CYGCONF_ARGS="
 	--with-gdktarget=x11
 	--with-xinput
 "
+MAKEOPTS+=" HTML_IMAGES= "
