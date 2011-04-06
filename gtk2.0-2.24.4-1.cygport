@@ -7,6 +7,7 @@ HOMEPAGE="http://www.gtk.org/"
 
 PATCH_URI="
 	2.18.3-not-win32.patch
+	2.24.4-gtk-doc-117.patch
 "
 
 PKG_NAMES="${PN}-demo ${PN}-engines-pixmap libgtk2.0_0 libgtk2.0-devel
