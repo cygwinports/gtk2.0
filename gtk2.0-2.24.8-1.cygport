@@ -10,11 +10,33 @@ PATCH_URI="
 	2.24.4-gtk-doc-117.patch
 "
 
+DEPEND="gnome-common gtk-doc
+	girepository(Atk-1.0)
+	girepository(cairo-1.0)
+	girepository(GdkPixbuf-2.0)
+	girepository(Pango-1.0)
+	pkgconfig(atk)
+	pkgconfig(cairo)
+	pkgconfig(fontconfig)
+	pkgconfig(gdk-pixbuf-2.0)
+	pkgconfig(pango)
+	pkgconfig(x11)
+	pkgconfig(xcomposite)
+	pkgconfig(xcursor)
+	pkgconfig(xdamage)
+	pkgconfig(xext)
+	pkgconfig(xfixes)
+	pkgconfig(xi)
+	pkgconfig(xinerama)
+	pkgconfig(xrandr)
+	pkgconfig(xrender)"
+
 PKG_NAMES="${PN}-demo ${PN}-engines-pixmap libgtk2.0_0 libgtk2.0-devel
            girepository-Gtk2.0 ${PN}-gail libgailutil18 libgailutil-devel"
 gtk2_0_demo_CONTENTS="usr/bin/gtk-demo.exe usr/share/gtk-2.0/demo/"
 gtk2_0_engines_pixmap_CONTENTS="usr/lib/gtk-2.0/*/engines/"
 libgtk2_0_0_CONTENTS="--exclude=gtk-builder-convert --exclude=*gailutil*
+                 --exclude=gtk-update-icon-cache*
                  --exclude=include --exclude=gtk-demo.* etc/ usr/bin/
                  usr/lib/gtk-2.0/*/immodules/ usr/lib/gtk-2.0/*/printbackends/
                  usr/share/doc/ usr/share/locale/ usr/share/man/ usr/share/themes/"
@@ -26,6 +48,9 @@ gtk2_0_gail_CONTENTS="usr/lib/gtk-2.0/modules/"
 libgailutil18_CONTENTS="usr/bin/cyggailutil-18.dll"
 libgailutil_devel_CONTENTS="usr/include/gail-1.0/ usr/lib/libgailutil.*
                  usr/lib/pkgconfig/gail.pc usr/share/gtk-doc/html/gail*"
+# now provided by gtk3
+PKG_IGNORE="usr/bin/gtk-update-icon-cache* usr/share/man/man1/gtk-update-icon-cache*"
+
 
 DIFF_EXCLUDES="gdk.rc"
 
@@ -39,4 +64,3 @@ CYGCONF_ARGS="
 	--with-gdktarget=x11
 	--with-xinput
 "
-MAKEOPTS+=" HTML_IMAGES= "
