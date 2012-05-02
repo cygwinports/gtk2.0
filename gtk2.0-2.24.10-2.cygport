@@ -38,7 +38,7 @@ gtk2_0_engines_pixmap_CONTENTS="usr/lib/gtk-2.0/*/engines/"
 libgtk2_0_0_CONTENTS="--exclude=gtk-builder-convert --exclude=*gailutil*
                  --exclude=gtk-update-icon-cache*
                  --exclude=include --exclude=gtk-demo.* etc/ usr/bin/
-                 usr/lib/gtk-2.0/*/immodules/ usr/lib/gtk-2.0/*/printbackends/
+                 usr/lib/gtk-2.0/*/printbackends/
                  usr/share/doc/ usr/share/locale/ usr/share/man/ usr/share/themes/"
 libgtk2_0_devel_CONTENTS="--exclude=*gail* usr/bin/gtk-builder-convert
                  usr/include/ usr/lib/gtk-2.0/include/ usr/lib/lib*
@@ -63,4 +63,7 @@ CYGCONF_ARGS="
 	--disable-visibility
 	--with-gdktarget=x11
 	--with-xinput
+	--with-included-immodules
 "
+
+KEEP_LA_FILES="shared"
