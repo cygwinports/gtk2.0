@@ -1,8 +1,10 @@
 ORIG_PN=gtk+
-
 inherit gnome2
 
-CATEGORY="Gnome X11"
+NAME="gtk2.0"
+VERSION=2.24.14
+RELEASE=1
+CATEGORY="GNOME X11"
 SUMMARY="GTK+ X11 GUI toolkit"
 DESCRIPTION="Offering a complete set of widgets, GTK+ is suitable for
 projects ranging from small one-off projects to complete application
@@ -77,5 +79,3 @@ CYGCONF_ARGS="
 	--with-xinput
 	--with-included-immodules
 "
-
-KEEP_LA_FILES="shared"
