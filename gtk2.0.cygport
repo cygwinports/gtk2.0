@@ -2,7 +2,7 @@ ORIG_PN=gtk+
 inherit gnome2
 
 NAME="gtk2.0"
-VERSION=2.24.14
+VERSION=2.24.17
 RELEASE=1
 CATEGORY="GNOME X11"
 SUMMARY="GTK+ X11 GUI toolkit"
@@ -44,7 +44,7 @@ gtk2_0_demo_CONTENTS="usr/bin/gtk-demo.exe usr/share/gtk-2.0/demo/"
 gtk2_0_engines_pixmap_SUMMARY="Pixmap theme engine for GTK+"
 gtk2_0_engines_pixmap_CONTENTS="usr/lib/gtk-2.0/*/engines/"
 libgtk2_0_0_SUMMARY="${SUMMARY} (runtime)"
-libgtk2_0_0_REQUIRES="gnome-icon-theme"
+libgtk2_0_0_REQUIRES="gnome-icon-theme gtk-update-icon-cache"
 libgtk2_0_0_CONTENTS="--exclude=gtk-builder-convert --exclude=*gailutil*
                  --exclude=gtk-update-icon-cache*
                  --exclude=include --exclude=gtk-demo.* etc/ usr/bin/
