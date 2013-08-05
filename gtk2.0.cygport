@@ -2,9 +2,9 @@ ORIG_PN=gtk+
 inherit gnome2
 
 NAME="gtk2.0"
-VERSION=2.24.18
+VERSION=2.24.20
 RELEASE=1
-CATEGORY="GNOME X11"
+CATEGORY="Libs"
 SUMMARY="GTK+ X11 GUI toolkit"
 DESCRIPTION="Offering a complete set of widgets, GTK+ is suitable for
 projects ranging from small one-off projects to complete application
@@ -37,10 +37,12 @@ DEPEND="gnome-common gtk-doc
 	pkgconfig(xrandr)
 	pkgconfig(xrender)"
 
-PKG_NAMES="${PN}-demo ${PN}-engines-pixmap libgtk2.0_0 libgtk2.0-devel
-           girepository-Gtk2.0 ${PN}-gail libgailutil18 libgailutil-devel"
+PKG_NAMES="${NAME}-demo ${NAME}-engines-pixmap libgtk2.0_0 libgtk2.0-devel
+           girepository-Gtk2.0 ${NAME}-gail libgailutil18 libgailutil-devel"
+gtk2_0_demo_CATEGORY="X11"
 gtk2_0_demo_SUMMARY="GTK+ Demo application"
 gtk2_0_demo_CONTENTS="usr/bin/gtk-demo.exe usr/share/gtk-2.0/demo/"
+gtk2_0_engines_pixmap_CATEGORY="X11"
 gtk2_0_engines_pixmap_SUMMARY="Pixmap theme engine for GTK+"
 gtk2_0_engines_pixmap_CONTENTS="usr/lib/gtk-2.0/*/engines/"
 libgtk2_0_0_SUMMARY="${SUMMARY} (runtime)"
@@ -56,6 +58,7 @@ libgtk2_0_devel_CONTENTS="--exclude=*gail* usr/bin/gtk-builder-convert
                  usr/lib/pkgconfig/ usr/share/aclocal/ usr/share/gtk-doc/"
 girepository_Gtk2_0_SUMMARY="${SUMMARY} (GObject Introspection)"
 girepository_Gtk2_0_CONTENTS="usr/*/gir*/*-2.0.*"
+gtk2_0_gail_CATEGORY="X11"
 gtk2_0_gail_SUMMARY="Accessibility Module for GTK+"
 gtk2_0_gail_CONTENTS="usr/lib/gtk-2.0/modules/"
 libgailutil18_SUMMARY="Accessibility Library for GTK+ (runtime)"
