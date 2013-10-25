@@ -2,7 +2,7 @@ ORIG_PN=gtk+
 inherit gnome2
 
 NAME="gtk2.0"
-VERSION=2.24.20
+VERSION=2.24.22
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GTK+ X11 GUI toolkit"
@@ -37,8 +37,10 @@ DEPEND="gnome-common gtk-doc
 	pkgconfig(xrandr)
 	pkgconfig(xrender)"
 
-PKG_NAMES="${NAME}-demo ${NAME}-engines-pixmap libgtk2.0_0 libgtk2.0-devel
-           girepository-Gtk2.0 ${NAME}-gail libgailutil18 libgailutil-devel"
+PKG_NAMES="${NAME}-demo ${NAME}-engines-pixmap
+           libgtk2.0_0 libgtk2.0-devel libgtk2.0-doc
+           girepository-Gtk2.0 ${NAME}-gail
+           libgailutil18 libgailutil-devel libgailutil-doc"
 gtk2_0_demo_CATEGORY="X11"
 gtk2_0_demo_SUMMARY="GTK+ Demo application"
 gtk2_0_demo_CONTENTS="usr/bin/gtk-demo.exe usr/share/gtk-2.0/demo/"
@@ -55,7 +57,9 @@ libgtk2_0_0_CONTENTS="--exclude=gtk-builder-convert --exclude=*gailutil*
 libgtk2_0_devel_SUMMARY="${SUMMARY} (development)"
 libgtk2_0_devel_CONTENTS="--exclude=*gail* usr/bin/gtk-builder-convert
                  usr/include/ usr/lib/gtk-2.0/include/ usr/lib/lib*
-                 usr/lib/pkgconfig/ usr/share/aclocal/ usr/share/gtk-doc/"
+                 usr/lib/pkgconfig/ usr/share/aclocal/"
+libgtk2_0_doc_CATEGORY="Doc"
+libgtk2_0_doc_CONTENTS="--exclude=*gail* usr/share/gtk-doc/"
 girepository_Gtk2_0_SUMMARY="${SUMMARY} (GObject Introspection)"
 girepository_Gtk2_0_CONTENTS="usr/*/gir*/*-2.0.*"
 gtk2_0_gail_CATEGORY="X11"
@@ -65,7 +69,9 @@ libgailutil18_SUMMARY="Accessibility Library for GTK+ (runtime)"
 libgailutil18_CONTENTS="usr/bin/cyggailutil-18.dll"
 libgailutil_devel_SUMMARY="Accessibility Library for GTK+ (development)"
 libgailutil_devel_CONTENTS="usr/include/gail-1.0/ usr/lib/libgailutil.*
-                 usr/lib/pkgconfig/gail.pc usr/share/gtk-doc/html/gail*"
+                 usr/lib/pkgconfig/gail.pc"
+libgailutil_doc_CATEGORY="Doc"
+libgailutil_doc_CONTENTS="usr/share/gtk-doc/html/gail*"
 # now provided by gtk3
 PKG_IGNORE="usr/bin/gtk-update-icon-cache* usr/share/man/man1/gtk-update-icon-cache*"
 
