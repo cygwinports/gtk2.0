@@ -3,7 +3,7 @@ inherit gnome2
 
 NAME="gtk2.0"
 VERSION=2.24.25
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="GTK+ X11 GUI toolkit"
 DESCRIPTION="Offering a complete set of widgets, GTK+ is suitable for
@@ -12,6 +12,10 @@ suites."
 HOMEPAGE="http://www.gtk.org/"
 
 PATCH_URI="
+	fedora/system-python.patch
+	fedora/icon-padding.patch
+	fedora/tooltip-positioning.patch
+	fedora/window-dragging.patch
 	2.18.3-not-win32.patch
 	2.24.4-gtk-doc-117.patch
 "
