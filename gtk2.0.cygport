@@ -53,7 +53,7 @@ gtk2_0_engines_pixmap_CATEGORY="X11"
 gtk2_0_engines_pixmap_SUMMARY="Pixmap theme engine for GTK+"
 gtk2_0_engines_pixmap_CONTENTS="usr/lib/gtk-2.0/*/engines/"
 libgtk2_0_0_SUMMARY="${SUMMARY} (runtime)"
-libgtk2_0_0_REQUIRES="gnome-icon-theme gtk-update-icon-cache"
+libgtk2_0_0_REQUIRES="adwaita-icon-theme gtk-update-icon-cache"
 libgtk2_0_0_CONTENTS="--exclude=gtk-builder-convert --exclude=*gailutil*
                  --exclude=gtk-update-icon-cache*
                  --exclude=include --exclude=gtk-demo.* etc/ usr/bin/
