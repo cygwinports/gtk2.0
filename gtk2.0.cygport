@@ -2,7 +2,7 @@ ORIG_PN=gtk+
 inherit gnome2
 
 NAME="gtk2.0"
-VERSION=2.24.30
+VERSION=2.24.31
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GTK+ X11 GUI toolkit"
@@ -18,7 +18,6 @@ PATCH_URI="
 	fedora/window-dragging.patch
 	2.18.3-not-win32.patch
 	2.24.4-gtk-doc-117.patch
-	2.24.28-introspection.patch
 "
 
 DEPEND="gnome-common gtk-doc
@@ -84,7 +83,7 @@ DIFF_EXCLUDES="gdk.rc"
 
 CYGCONF_ARGS="
 	--disable-glibtest
-	--enable-explicit-deps
+	--disable-explicit-deps
 	--enable-man
 	--enable-xkb
 	--disable-test-print-backend

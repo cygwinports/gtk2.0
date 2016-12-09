@@ -17,17 +17,6 @@
  #define DO_ESCAPE 0
  #else  
  #define DO_ESCAPE 1
---- origsrc/gtk+-2.18.3/gtk/gtkfilechooserentry.c	2009-06-04 14:18:04.000000000 -0500
-+++ src/gtk+-2.18.3/gtk/gtkfilechooserentry.c	2009-10-25 17:05:40.300261500 -0500
-@@ -408,7 +408,7 @@ completion_match_func (GtkEntryCompletio
-   norm_file_part = g_utf8_normalize (chooser_entry->file_part, -1, G_NORMALIZE_ALL);
-   norm_name = g_utf8_normalize (name, -1, G_NORMALIZE_ALL);
- 
--#ifdef G_PLATFORM_WIN32
-+#ifdef G_OS_WIN32
-   {
-     gchar *temp;
- 
 --- origsrc/gtk+-2.18.3/gtk/gtkfilesel.c	2009-10-09 00:00:44.000000000 -0500
 +++ src/gtk+-2.18.3/gtk/gtkfilesel.c	2009-10-25 17:08:08.219719400 -0500
 @@ -45,12 +45,12 @@
